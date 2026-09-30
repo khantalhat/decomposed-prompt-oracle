@@ -1,0 +1,16 @@
+"tag","dataset","model","prompt_format","shots","genome","prompt","n_samples","exact_accuracy","ordinal_score","n_correct","n_unrecognized"
+"llama_g4077","sst5","meta-llama/Llama-3.2-3B-Instruct","chat","0","[4, 0, 7, 7]","Sentiment in film reviews can be nuanced — a calm or qualified tone does not imply mild sentiment. Classify the sentiment of the review. Labels: very negative, negative, neutral, positive, very positive. very negative requires strong overall dislike — not just some criticism. very positive requires strong overall admiration — not just some praise. neutral requires genuine balance — not a positive conclusion with some reservations.","2210","0.467421","0.828733","1033","6"
+
+"per_class:","label_id","label","support","correct","recall"
+"","0","very negative","279","219","0.7849"
+"","1","negative","633","291","0.4597"
+"","2","neutral","389","30","0.0771"
+"","3","positive","510","259","0.5078"
+"","4","very positive","399","234","0.5865"
+
+"confusion (row=actual, col=predicted)","very negative","negative","neutral","positive","very positive","unrecognized"
+"very negative","219","55","0","0","5","0"
+"negative","304","291","14","3","19","2"
+"neutral","102","139","30","54","60","4"
+"positive","18","32","22","259","179","0"
+"very positive","8","4","1","152","234","0"

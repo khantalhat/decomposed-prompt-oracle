@@ -1,0 +1,10 @@
+study,change,exact,ordinal,delta_exact,delta_ordinal,oracle_rank_ordinal
+add-in baseline,"naive [7,0,0,0]",0.46,0.82,0.0,0.0,2360
+add-in INTRO,INTRO->nuance note,0.464,0.829,0.004,0.009,1512
+add-in TASK,TASK->weigh evidence,0.404,0.802,-0.056,-0.018,3274
+add-in LABELS,LABELS->pos-end bound,0.444,0.824,-0.016,0.004,1946
+add-in OUTPUT,OUTPUT->exactly-one-label,0.464,0.821,0.004,0.001,2231
+LOO baseline,"ship g3145 [3,1,4,5]",0.52,0.862,0.0,0.0,1
+LOO -INTRO,INTRO->(empty),0.48,0.824,-0.04,-0.038,1951
+LOO -TASK,TASK->(empty),0.472,0.851,-0.048,-0.011,81
+LOO -OUTPUT,OUTPUT->(empty),0.496,0.852,-0.024,-0.01,78

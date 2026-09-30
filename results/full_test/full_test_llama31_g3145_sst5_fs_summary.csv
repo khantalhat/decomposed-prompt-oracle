@@ -1,0 +1,16 @@
+"tag","dataset","model","prompt_format","shots","genome","prompt","n_samples","exact_accuracy","ordinal_score","n_correct","n_unrecognized"
+"llama31_g3145_sst5_fs","sst5","meta-llama/Llama-3.1-8B-Instruct","chat","5","[3, 1, 4, 5]","Note: in film criticism, strong feelings are often expressed in understated or measured language. Identify both the direction (positive or negative) and the intensity (mild or strong) of the sentiment. Labels: very negative, negative, neutral, positive, very positive. very positive means strong admiration or delight, even if expressed briefly or with understatement. positive means genuine appreciation that includes reservations. Sentiment:","2210","0.548869","0.868552","1213","0"
+
+"per_class:","label_id","label","support","correct","recall"
+"","0","very negative","279","224","0.8029"
+"","1","negative","633","332","0.5245"
+"","2","neutral","389","57","0.1465"
+"","3","positive","510","311","0.6098"
+"","4","very positive","399","289","0.7243"
+
+"confusion (row=actual, col=predicted)","very negative","negative","neutral","positive","very positive","unrecognized"
+"very negative","224","52","0","1","2","0"
+"negative","253","332","21","21","6","0"
+"neutral","60","133","57","107","32","0"
+"positive","5","14","18","311","162","0"
+"very positive","2","0","2","106","289","0"

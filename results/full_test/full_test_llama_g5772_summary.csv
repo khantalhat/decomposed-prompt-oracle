@@ -1,0 +1,16 @@
+"tag","dataset","model","prompt_format","shots","genome","prompt","n_samples","exact_accuracy","ordinal_score","n_correct","n_unrecognized"
+"llama_g5772","sst5","meta-llama/Llama-3.2-3B-Instruct","chat","0","[5, 7, 7, 2]","Treat this as an ordinal classification task: five sentiment levels from very negative to very positive. Labels: very negative, negative, neutral, positive, very positive. very negative requires strong overall dislike — not just some criticism. very positive requires strong overall admiration — not just some praise. neutral requires genuine balance — not a positive conclusion with some reservations. Answer:","2210","0.434389","0.806787","960","26"
+
+"per_class:","label_id","label","support","correct","recall"
+"","0","very negative","279","208","0.7455"
+"","1","negative","633","278","0.4392"
+"","2","neutral","389","56","0.144"
+"","3","positive","510","178","0.349"
+"","4","very positive","399","240","0.6015"
+
+"confusion (row=actual, col=predicted)","very negative","negative","neutral","positive","very positive","unrecognized"
+"very negative","208","61","2","1","2","5"
+"negative","296","278","34","1","15","9"
+"neutral","106","133","56","29","58","7"
+"positive","41","42","71","178","173","5"
+"very positive","8","8","11","132","240","0"

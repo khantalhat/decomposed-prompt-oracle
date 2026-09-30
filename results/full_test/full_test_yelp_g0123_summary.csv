@@ -1,0 +1,16 @@
+"tag","dataset","model","prompt_format","shots","genome","prompt","n_samples","exact_accuracy","ordinal_score","n_correct","n_unrecognized"
+"yelp_g0123","yelp5","meta-llama/Llama-3.2-3B-Instruct","chat","0","[0, 1, 2, 3]","You are an expert sentiment analysis system. Identify both the direction (positive or negative) and the intensity (mild or strong) of the sentiment. Labels: very negative, negative, neutral, positive, very positive. very negative=strong disappointment or contempt, even if expressed calmly; negative=mild or qualified criticism; neutral=genuinely balanced or ambiguous overall; positive=genuine approval despite some reservations; very positive=strong admiration, even if expressed briefly. Your entire response must be exactly one of the five labels. Nothing else.","2500","0.5828","0.8844","1457","0"
+
+"per_class:","label_id","label","support","correct","recall"
+"","0","very negative","500","428","0.856"
+"","1","negative","500","304","0.608"
+"","2","neutral","500","67","0.134"
+"","3","positive","500","330","0.66"
+"","4","very positive","500","328","0.656"
+
+"confusion (row=actual, col=predicted)","very negative","negative","neutral","positive","very positive","unrecognized"
+"very negative","428","69","1","0","2","0"
+"negative","184","304","5","7","0","0"
+"neutral","26","267","67","131","9","0"
+"positive","3","37","19","330","111","0"
+"very positive","2","6","3","161","328","0"

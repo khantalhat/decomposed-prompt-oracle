@@ -1,0 +1,16 @@
+"tag","dataset","model","prompt_format","shots","genome","prompt","n_samples","exact_accuracy","ordinal_score","n_correct","n_unrecognized"
+"yelp_g4135","yelp5","meta-llama/Llama-3.2-3B-Instruct","chat","0","[4, 1, 3, 5]","Sentiment in customer reviews can be nuanced — a calm or qualified tone does not imply mild sentiment. Identify both the direction (positive or negative) and the intensity (mild or strong) of the sentiment. Labels: very negative, negative, neutral, positive, very positive. very negative means the reviewer strongly dislikes the business, even if expressed in measured language. negative means mild or partial criticism only. Sentiment:","2500","0.5192","0.8586","1298","8"
+
+"per_class:","label_id","label","support","correct","recall"
+"","0","very negative","500","443","0.886"
+"","1","negative","500","214","0.428"
+"","2","neutral","500","48","0.096"
+"","3","positive","500","132","0.264"
+"","4","very positive","500","461","0.922"
+
+"confusion (row=actual, col=predicted)","very negative","negative","neutral","positive","very positive","unrecognized"
+"very negative","443","51","1","0","2","3"
+"negative","253","214","13","14","5","1"
+"neutral","50","208","48","145","46","3"
+"positive","3","43","8","132","313","1"
+"very positive","2","3","0","34","461","0"

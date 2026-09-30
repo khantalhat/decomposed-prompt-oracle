@@ -1,0 +1,10 @@
+which,genome,exact,ordinal,rank_exact,rank_ordinal
+additive-rule (ordinal),"[4, 4, 4, 3]",0.524,0.861,29,2
+additive-rule (exact),"[2, 0, 4, 1]",0.468,0.827,1243,1726
+oracle-best exact,"[4, 1, 7, 5]",0.552,0.859,1,9
+oracle-best ordinal,"[3, 1, 4, 5]",0.52,0.862,36,1
+evolved g7205,"[7, 2, 0, 5]",0.536,0.849,10,130
+evolved g4175,"[4, 1, 7, 5]",0.552,0.859,1,9
+evolved g4443,"[4, 4, 4, 3]",0.524,0.861,29,2
+evolved g3145,"[3, 1, 4, 5]",0.52,0.862,36,1
+naive,"[7, 0, 0, 0]",0.46,0.82,1576,2360

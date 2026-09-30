@@ -1,0 +1,16 @@
+"tag","model","prompt_format","shots","genome","prompt","n_samples","exact_accuracy","ordinal_score","n_correct","n_unrecognized"
+"alpaca_g7205","chavinlo/alpaca-native","alpaca","0","[7, 2, 0, 5]","Determine the reviewer's dominant overall sentiment, not the sentiment of individual phrases. Possible labels: very negative, negative, neutral, positive, very positive. Sentiment:","2210","0.467421","0.85","1033","0"
+
+"per_class:","label_id","label","support","correct","recall"
+"","0","very negative","279","49","0.1756"
+"","1","negative","633","477","0.7536"
+"","2","neutral","389","77","0.1979"
+"","3","positive","510","430","0.8431"
+"","4","very positive","399","0","0.0"
+
+"confusion (row=actual, col=predicted)","very negative","negative","neutral","positive","very positive","unrecognized"
+"very negative","49","218","8","4","0","0"
+"negative","49","477","77","30","0","0"
+"neutral","11","155","77","144","2","0"
+"positive","10","42","26","430","2","0"
+"very positive","2","8","6","383","0","0"

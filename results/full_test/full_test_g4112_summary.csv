@@ -1,0 +1,16 @@
+"tag","dataset","model","prompt_format","shots","genome","prompt","n_samples","exact_accuracy","ordinal_score","n_correct","n_unrecognized"
+"g4112","sst5","meta-llama/Llama-3.2-3B-Instruct","chat","0","[4, 1, 1, 2]","Sentiment in film reviews can be nuanced — a calm or qualified tone does not imply mild sentiment. Identify both the direction (positive or negative) and the intensity (mild or strong) of the sentiment. Labels: very negative, negative, neutral, positive, very positive. positive means the reviewer genuinely recommends the film despite flaws. neutral means the reviewer is neither recommending nor discouraging — genuinely on the fence. Answer:","2210","0.470136","0.824774","1039","27"
+
+"per_class:","label_id","label","support","correct","recall"
+"","0","very negative","279","197","0.7061"
+"","1","negative","633","299","0.4724"
+"","2","neutral","389","29","0.0746"
+"","3","positive","510","290","0.5686"
+"","4","very positive","399","224","0.5614"
+
+"confusion (row=actual, col=predicted)","very negative","negative","neutral","positive","very positive","unrecognized"
+"very negative","197","78","1","1","1","1"
+"negative","288","299","20","9","9","8"
+"neutral","108","139","29","75","21","17"
+"positive","26","39","14","290","140","1"
+"very positive","12","3","2","158","224","0"

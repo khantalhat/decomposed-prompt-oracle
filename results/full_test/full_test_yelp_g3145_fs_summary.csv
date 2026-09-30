@@ -1,0 +1,16 @@
+"tag","dataset","model","prompt_format","shots","genome","prompt","n_samples","exact_accuracy","ordinal_score","n_correct","n_unrecognized"
+"yelp_g3145_fs","yelp5","meta-llama/Llama-3.2-3B-Instruct","chat","5","[3, 1, 4, 5]","Note: in customer feedback, strong feelings are often expressed in understated or measured language. Identify both the direction (positive or negative) and the intensity (mild or strong) of the sentiment. Labels: very negative, negative, neutral, positive, very positive. very positive means strong admiration or delight, even if expressed briefly or with understatement. positive means genuine appreciation that includes reservations. Sentiment:","2500","0.5284","0.8614","1321","0"
+
+"per_class:","label_id","label","support","correct","recall"
+"","0","very negative","500","473","0.946"
+"","1","negative","500","178","0.356"
+"","2","neutral","500","20","0.04"
+"","3","positive","500","206","0.412"
+"","4","very positive","500","444","0.888"
+
+"confusion (row=actual, col=predicted)","very negative","negative","neutral","positive","very positive","unrecognized"
+"very negative","473","23","2","0","2","0"
+"negative","295","178","5","16","6","0"
+"neutral","68","170","20","172","70","0"
+"positive","7","11","4","206","272","0"
+"very positive","1","2","1","52","444","0"

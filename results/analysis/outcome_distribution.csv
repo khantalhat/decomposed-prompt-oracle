@@ -1,0 +1,9 @@
+mode,band,threshold,ea_fraction,random_fraction
+exact,0.0,0.552,0.35,0.0685
+exact,0.005,0.547,0.35,0.0685
+exact,0.01,0.542,0.35,0.2472
+exact,0.02,0.532,0.55,0.701
+ordinal,0.0,0.862,0.45,0.0676
+ordinal,0.005,0.857,0.9,0.7156
+ordinal,0.01,0.852,1.0,0.9958
+ordinal,0.02,0.842,1.0,1.0

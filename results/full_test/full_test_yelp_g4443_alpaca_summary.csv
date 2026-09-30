@@ -1,0 +1,16 @@
+"tag","dataset","model","prompt_format","shots","genome","prompt","n_samples","exact_accuracy","ordinal_score","n_correct","n_unrecognized"
+"yelp_g4443_alpaca","yelp5","chavinlo/alpaca-native","alpaca","0","[4, 4, 4, 3]","Sentiment in customer reviews can be nuanced — a calm or qualified tone does not imply mild sentiment. Weigh all evidence in the review and select the label that best represents the overall tone. Labels: very negative, negative, neutral, positive, very positive. very positive means strong admiration or delight, even if expressed briefly or with understatement. positive means genuine appreciation that includes reservations. Your entire response must be exactly one of the five labels. Nothing else.","2500","0.4252","0.8025","1063","1"
+
+"per_class:","label_id","label","support","correct","recall"
+"","0","very negative","500","491","0.982"
+"","1","negative","500","10","0.02"
+"","2","neutral","500","12","0.024"
+"","3","positive","500","98","0.196"
+"","4","very positive","500","452","0.904"
+
+"confusion (row=actual, col=predicted)","very negative","negative","neutral","positive","very positive","unrecognized"
+"very negative","491","3","0","1","5","0"
+"negative","455","10","7","10","18","0"
+"neutral","212","4","12","70","202","0"
+"positive","21","1","1","98","378","1"
+"very positive","5","0","0","43","452","0"

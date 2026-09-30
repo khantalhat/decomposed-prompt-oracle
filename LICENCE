@@ -1,0 +1,91 @@
+Copyright (c) 2026 Talhat Khan, Allan de Lima, Vimal Kumar Kumar, and Conor Ryan.
+
+This release is licensed in two parts, because it contains both software and data.
+
+
+================================================================================
+1. SOFTWARE  --  MIT License
+================================================================================
+
+Applies to everything under code/, including all Python scripts.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in the
+Software without restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the
+Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+================================================================================
+2. DATA AND DERIVED ARTEFACTS  --  CC BY 4.0
+================================================================================
+
+Applies to the measurements and generated text this work produced:
+
+  allele_library.json                the 32 authored allele strings
+  results/brute_force/               the 4,096-genome oracle
+  results/evolution/                 convergence traces and evaluation caches
+  results/analysis/                  derived tables
+  results/full_test/                 held-out test summaries
+  the label column and per-class ordering of validation_items.csv
+
+Licensed under the Creative Commons Attribution 4.0 International License
+(CC BY 4.0). You may share and adapt this material for any purpose, including
+commercially, provided you give appropriate credit, link to the licence, and
+indicate if changes were made.
+
+Full text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+Attribution should cite the accompanying paper:
+
+  T. Khan, A. de Lima, V. K. Kumar, and C. Ryan, "Decomposed and Enumerable
+  Prompt Optimisation for Five-Class Ordinal Sentiment Classification,"
+  IEEE Access, 2026.
+
+
+================================================================================
+3. THIRD-PARTY CONTENT  --  NOT relicensed by the above
+================================================================================
+
+This release redistributes small excerpts of two public datasets, only to the
+extent needed to make the validation probe and the five-shot demonstrations
+reproducible. Nothing in sections 1 and 2 grants any right over this content;
+it remains under the terms of its original providers, and those terms govern
+any further redistribution:
+
+  - The review sentences in validation_items.csv (250 items) and the five
+    demonstrations in FEWSHOT_EXAMPLES in code/evolution/evaluate_full_test.py
+    come from the Stanford Sentiment Treebank (SST-5), obtained via the
+    SetFit/sst5 mirror on Hugging Face.
+      Socher et al., "Recursive Deep Models for Semantic Compositionality Over
+      a Sentiment Treebank," EMNLP 2013.
+
+  - The five demonstrations in YELP_FEWSHOT_EXAMPLES in the same file are
+    reviews from the Yelp Open Dataset, governed by the Yelp Dataset Terms of
+    Use. These ten lines are the only Yelp review text in this release; all
+    Yelp-5 results here are aggregate scores, with no per-item review text.
+      https://www.yelp.com/dataset/terms
+
+Model weights are not redistributed. The scripts download them from Hugging
+Face, and each model remains subject to its own licence (for example the Llama
+Community License for the Llama models).
+
+
+================================================================================
+FUNDING
+================================================================================
+
+This work was conducted with the financial support of Taighde Éireann--Research
+Ireland under Grant number 18/CRT/6223, with Lero--the Research Ireland Centre
+for Software and the CSIS Department at the University of Limerick.

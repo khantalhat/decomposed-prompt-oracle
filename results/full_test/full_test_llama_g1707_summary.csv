@@ -1,0 +1,16 @@
+"tag","dataset","model","prompt_format","shots","genome","prompt","n_samples","exact_accuracy","ordinal_score","n_correct","n_unrecognized"
+"llama_g1707","sst5","meta-llama/Llama-3.2-3B-Instruct","chat","0","[1, 7, 0, 7]","You are a specialist in natural language sentiment analysis with expertise in film criticism. Possible labels: very negative, negative, neutral, positive, very positive.","2210","0.433484","0.813688","958","7"
+
+"per_class:","label_id","label","support","correct","recall"
+"","0","very negative","279","229","0.8208"
+"","1","negative","633","212","0.3349"
+"","2","neutral","389","76","0.1954"
+"","3","positive","510","150","0.2941"
+"","4","very positive","399","291","0.7293"
+
+"confusion (row=actual, col=predicted)","very negative","negative","neutral","positive","very positive","unrecognized"
+"very negative","229","43","1","0","6","0"
+"negative","339","212","49","1","30","2"
+"neutral","107","86","76","25","91","4"
+"positive","20","16","68","150","255","1"
+"very positive","10","0","10","88","291","0"

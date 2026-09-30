@@ -1,0 +1,65 @@
+a_label,b_label,a_idx,b_idx,exact
+classify (minimal),return label,0,0,0.4384
+classify (minimal),no explanation,0,1,0.4766
+classify (minimal),Answer:,0,2,0.4602
+classify (minimal),exactly-one-label,0,3,0.4596
+classify (minimal),no chain-of-thought,0,4,0.4487
+classify (minimal),Sentiment:,0,5,0.4615
+classify (minimal),penalty framing,0,6,0.4156
+classify (minimal),(empty),0,7,0.4866
+direction+intensity,return label,1,0,0.4409
+direction+intensity,no explanation,1,1,0.4605
+direction+intensity,Answer:,1,2,0.4496
+direction+intensity,exactly-one-label,1,3,0.4769
+direction+intensity,no chain-of-thought,1,4,0.4607
+direction+intensity,Sentiment:,1,5,0.4447
+direction+intensity,penalty framing,1,6,0.4264
+direction+intensity,(empty),1,7,0.3764
+dominant sentiment,return label,2,0,0.4232
+dominant sentiment,no explanation,2,1,0.4699
+dominant sentiment,Answer:,2,2,0.4406
+dominant sentiment,exactly-one-label,2,3,0.4544
+dominant sentiment,no chain-of-thought,2,4,0.4408
+dominant sentiment,Sentiment:,2,5,0.4418
+dominant sentiment,penalty framing,2,6,0.3923
+dominant sentiment,(empty),2,7,0.4451
+mild vs strong,return label,3,0,0.4098
+mild vs strong,no explanation,3,1,0.4417
+mild vs strong,Answer:,3,2,0.4313
+mild vs strong,exactly-one-label,3,3,0.4266
+mild vs strong,no chain-of-thought,3,4,0.4429
+mild vs strong,Sentiment:,3,5,0.4496
+mild vs strong,penalty framing,3,6,0.3792
+mild vs strong,(empty),3,7,0.3208
+weigh evidence,return label,4,0,0.4288
+weigh evidence,no explanation,4,1,0.4635
+weigh evidence,Answer:,4,2,0.4861
+weigh evidence,exactly-one-label,4,3,0.4468
+weigh evidence,no chain-of-thought,4,4,0.4352
+weigh evidence,Sentiment:,4,5,0.4751
+weigh evidence,penalty framing,4,6,0.4069
+weigh evidence,(empty),4,7,0.49
+anti-anchor,return label,5,0,0.4063
+anti-anchor,no explanation,5,1,0.4381
+anti-anchor,Answer:,5,2,0.4082
+anti-anchor,exactly-one-label,5,3,0.4137
+anti-anchor,no chain-of-thought,5,4,0.4233
+anti-anchor,Sentiment:,5,5,0.4108
+anti-anchor,penalty framing,5,6,0.3771
+anti-anchor,(empty),5,7,0.4325
+final conclusion,return label,6,0,0.4
+final conclusion,no explanation,6,1,0.4566
+final conclusion,Answer:,6,2,0.4021
+final conclusion,exactly-one-label,6,3,0.4308
+final conclusion,no chain-of-thought,6,4,0.4341
+final conclusion,Sentiment:,6,5,0.4178
+final conclusion,penalty framing,6,6,0.4006
+final conclusion,(empty),6,7,0.4135
+(empty),return label,7,0,0.4313
+(empty),no explanation,7,1,0.4553
+(empty),Answer:,7,2,0.4468
+(empty),exactly-one-label,7,3,0.4388
+(empty),no chain-of-thought,7,4,0.4419
+(empty),Sentiment:,7,5,0.4524
+(empty),penalty framing,7,6,0.4029
+(empty),(empty),7,7,0.4701

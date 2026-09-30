@@ -1,0 +1,401 @@
+dataset,model,shots,genome,class,recall
+SST-5,Alpaca-7B,5,"[3, 1, 4, 5]",very negative,0.129
+SST-5,Alpaca-7B,5,"[3, 1, 4, 5]",negative,0.8768
+SST-5,Alpaca-7B,5,"[3, 1, 4, 5]",neutral,0.2545
+SST-5,Alpaca-7B,5,"[3, 1, 4, 5]",positive,0.3588
+SST-5,Alpaca-7B,5,"[3, 1, 4, 5]",very positive,0.6316
+SST-5,Alpaca-7B,0,"[3, 1, 4, 5]",very negative,0.1183
+SST-5,Alpaca-7B,0,"[3, 1, 4, 5]",negative,0.891
+SST-5,Alpaca-7B,0,"[3, 1, 4, 5]",neutral,0.0
+SST-5,Alpaca-7B,0,"[3, 1, 4, 5]",positive,0.8314
+SST-5,Alpaca-7B,0,"[3, 1, 4, 5]",very positive,0.0
+SST-5,Alpaca-7B,5,"[4, 1, 7, 5]",very negative,0.1004
+SST-5,Alpaca-7B,5,"[4, 1, 7, 5]",negative,0.8626
+SST-5,Alpaca-7B,5,"[4, 1, 7, 5]",neutral,0.3856
+SST-5,Alpaca-7B,5,"[4, 1, 7, 5]",positive,0.302
+SST-5,Alpaca-7B,5,"[4, 1, 7, 5]",very positive,0.4637
+SST-5,Alpaca-7B,0,"[4, 1, 7, 5]",very negative,0.4301
+SST-5,Alpaca-7B,0,"[4, 1, 7, 5]",negative,0.6603
+SST-5,Alpaca-7B,0,"[4, 1, 7, 5]",neutral,0.0925
+SST-5,Alpaca-7B,0,"[4, 1, 7, 5]",positive,0.6824
+SST-5,Alpaca-7B,0,"[4, 1, 7, 5]",very positive,0.0551
+SST-5,Alpaca-7B,5,"[4, 4, 4, 3]",very negative,0.0573
+SST-5,Alpaca-7B,5,"[4, 4, 4, 3]",negative,0.891
+SST-5,Alpaca-7B,5,"[4, 4, 4, 3]",neutral,0.3419
+SST-5,Alpaca-7B,5,"[4, 4, 4, 3]",positive,0.4412
+SST-5,Alpaca-7B,5,"[4, 4, 4, 3]",very positive,0.3985
+SST-5,Alpaca-7B,0,"[4, 4, 4, 3]",very negative,0.8566
+SST-5,Alpaca-7B,0,"[4, 4, 4, 3]",negative,0.2022
+SST-5,Alpaca-7B,0,"[4, 4, 4, 3]",neutral,0.1568
+SST-5,Alpaca-7B,0,"[4, 4, 4, 3]",positive,0.498
+SST-5,Alpaca-7B,0,"[4, 4, 4, 3]",very positive,0.5439
+SST-5,Alpaca-7B,5,"[7, 2, 0, 5]",very negative,0.2151
+SST-5,Alpaca-7B,5,"[7, 2, 0, 5]",negative,0.8199
+SST-5,Alpaca-7B,5,"[7, 2, 0, 5]",neutral,0.4267
+SST-5,Alpaca-7B,5,"[7, 2, 0, 5]",positive,0.3118
+SST-5,Alpaca-7B,5,"[7, 2, 0, 5]",very positive,0.4035
+SST-5,Alpaca-7B,0,"[7, 2, 0, 5]",very negative,0.1756
+SST-5,Alpaca-7B,0,"[7, 2, 0, 5]",negative,0.7536
+SST-5,Alpaca-7B,0,"[7, 2, 0, 5]",neutral,0.1979
+SST-5,Alpaca-7B,0,"[7, 2, 0, 5]",positive,0.8431
+SST-5,Alpaca-7B,0,"[7, 2, 0, 5]",very positive,0.0
+SST-5,Alpaca-7B,5,baseline:evoprompt_ga,very negative,0.3154
+SST-5,Alpaca-7B,5,baseline:evoprompt_ga,negative,0.7314
+SST-5,Alpaca-7B,5,baseline:evoprompt_ga,neutral,0.3882
+SST-5,Alpaca-7B,5,baseline:evoprompt_ga,positive,0.4353
+SST-5,Alpaca-7B,5,baseline:evoprompt_ga,very positive,0.5514
+SST-5,Llama-3.2-3B,0,"[0, 1, 2, 3]",very negative,0.509
+SST-5,Llama-3.2-3B,0,"[0, 1, 2, 3]",negative,0.7267
+SST-5,Llama-3.2-3B,0,"[0, 1, 2, 3]",neutral,0.0874
+SST-5,Llama-3.2-3B,0,"[0, 1, 2, 3]",positive,0.6314
+SST-5,Llama-3.2-3B,0,"[0, 1, 2, 3]",very positive,0.3459
+SST-5,Llama-3.2-3B,0,"[4, 0, 4, 7]",very negative,0.7204
+SST-5,Llama-3.2-3B,0,"[4, 0, 4, 7]",negative,0.5024
+SST-5,Llama-3.2-3B,0,"[4, 0, 4, 7]",neutral,0.0334
+SST-5,Llama-3.2-3B,0,"[4, 0, 4, 7]",positive,0.5882
+SST-5,Llama-3.2-3B,0,"[4, 0, 4, 7]",very positive,0.5614
+SST-5,Llama-3.2-3B,0,"[4, 1, 1, 2]",very negative,0.7061
+SST-5,Llama-3.2-3B,0,"[4, 1, 1, 2]",negative,0.4724
+SST-5,Llama-3.2-3B,0,"[4, 1, 1, 2]",neutral,0.0746
+SST-5,Llama-3.2-3B,0,"[4, 1, 1, 2]",positive,0.5686
+SST-5,Llama-3.2-3B,0,"[4, 1, 1, 2]",very positive,0.5614
+SST-5,Llama-3.2-3B,0,"[4, 1, 3, 2]",very negative,0.6093
+SST-5,Llama-3.2-3B,0,"[4, 1, 3, 2]",negative,0.5908
+SST-5,Llama-3.2-3B,0,"[4, 1, 3, 2]",neutral,0.0488
+SST-5,Llama-3.2-3B,0,"[4, 1, 3, 2]",positive,0.5392
+SST-5,Llama-3.2-3B,0,"[4, 1, 3, 2]",very positive,0.6291
+SST-5,Llama-3.2-3B,0,"[4, 1, 4, 3]",very negative,0.5627
+SST-5,Llama-3.2-3B,0,"[4, 1, 4, 3]",negative,0.6098
+SST-5,Llama-3.2-3B,0,"[4, 1, 4, 3]",neutral,0.1388
+SST-5,Llama-3.2-3B,0,"[4, 1, 4, 3]",positive,0.7137
+SST-5,Llama-3.2-3B,0,"[4, 1, 4, 3]",very positive,0.3258
+SST-5,GPT-3.5-turbo,5,"[3, 1, 4, 5]",very negative,0.4516
+SST-5,GPT-3.5-turbo,5,"[3, 1, 4, 5]",negative,0.7836
+SST-5,GPT-3.5-turbo,5,"[3, 1, 4, 5]",neutral,0.1979
+SST-5,GPT-3.5-turbo,5,"[3, 1, 4, 5]",positive,0.7961
+SST-5,GPT-3.5-turbo,5,"[3, 1, 4, 5]",very positive,0.4436
+SST-5,GPT-3.5-turbo,0,"[3, 1, 4, 5]",very negative,0.4194
+SST-5,GPT-3.5-turbo,0,"[3, 1, 4, 5]",negative,0.7804
+SST-5,GPT-3.5-turbo,0,"[3, 1, 4, 5]",neutral,0.0951
+SST-5,GPT-3.5-turbo,0,"[3, 1, 4, 5]",positive,0.9078
+SST-5,GPT-3.5-turbo,0,"[3, 1, 4, 5]",very positive,0.1178
+Yelp-5,GPT-3.5-turbo,5,"[3, 1, 4, 5]",very negative,0.702
+Yelp-5,GPT-3.5-turbo,5,"[3, 1, 4, 5]",negative,0.742
+Yelp-5,GPT-3.5-turbo,5,"[3, 1, 4, 5]",neutral,0.08
+Yelp-5,GPT-3.5-turbo,5,"[3, 1, 4, 5]",positive,0.824
+Yelp-5,GPT-3.5-turbo,5,"[3, 1, 4, 5]",very positive,0.626
+Yelp-5,GPT-3.5-turbo,0,"[3, 1, 4, 5]",very negative,0.596
+Yelp-5,GPT-3.5-turbo,0,"[3, 1, 4, 5]",negative,0.754
+Yelp-5,GPT-3.5-turbo,0,"[3, 1, 4, 5]",neutral,0.012
+Yelp-5,GPT-3.5-turbo,0,"[3, 1, 4, 5]",positive,0.972
+Yelp-5,GPT-3.5-turbo,0,"[3, 1, 4, 5]",very positive,0.242
+SST-5,Llama-3.1-8B,5,"[3, 1, 4, 5]",very negative,0.8029
+SST-5,Llama-3.1-8B,5,"[3, 1, 4, 5]",negative,0.5245
+SST-5,Llama-3.1-8B,5,"[3, 1, 4, 5]",neutral,0.1465
+SST-5,Llama-3.1-8B,5,"[3, 1, 4, 5]",positive,0.6098
+SST-5,Llama-3.1-8B,5,"[3, 1, 4, 5]",very positive,0.7243
+SST-5,Llama-3.1-8B,0,"[3, 1, 4, 5]",very negative,0.8423
+SST-5,Llama-3.1-8B,0,"[3, 1, 4, 5]",negative,0.4566
+SST-5,Llama-3.1-8B,0,"[3, 1, 4, 5]",neutral,0.036
+SST-5,Llama-3.1-8B,0,"[3, 1, 4, 5]",positive,0.5412
+SST-5,Llama-3.1-8B,0,"[3, 1, 4, 5]",very positive,0.6366
+Yelp-5,Llama-3.1-8B,5,"[3, 1, 4, 5]",very negative,0.94
+Yelp-5,Llama-3.1-8B,5,"[3, 1, 4, 5]",negative,0.384
+Yelp-5,Llama-3.1-8B,5,"[3, 1, 4, 5]",neutral,0.18
+Yelp-5,Llama-3.1-8B,5,"[3, 1, 4, 5]",positive,0.384
+Yelp-5,Llama-3.1-8B,5,"[3, 1, 4, 5]",very positive,0.918
+Yelp-5,Llama-3.1-8B,0,"[3, 1, 4, 5]",very negative,0.728
+Yelp-5,Llama-3.1-8B,0,"[3, 1, 4, 5]",negative,0.272
+Yelp-5,Llama-3.1-8B,0,"[3, 1, 4, 5]",neutral,0.022
+Yelp-5,Llama-3.1-8B,0,"[3, 1, 4, 5]",positive,0.268
+Yelp-5,Llama-3.1-8B,0,"[3, 1, 4, 5]",very positive,0.544
+Yelp-5,Llama-3.1-8B,0,"[3, 1, 4, 5]",very negative,0.942
+Yelp-5,Llama-3.1-8B,0,"[3, 1, 4, 5]",negative,0.238
+Yelp-5,Llama-3.1-8B,0,"[3, 1, 4, 5]",neutral,0.024
+Yelp-5,Llama-3.1-8B,0,"[3, 1, 4, 5]",positive,0.244
+Yelp-5,Llama-3.1-8B,0,"[3, 1, 4, 5]",very positive,0.886
+SST-5,Llama-3.2-3B,0,"[1, 1, 4, 3]",very negative,0.6165
+SST-5,Llama-3.2-3B,0,"[1, 1, 4, 3]",negative,0.5893
+SST-5,Llama-3.2-3B,0,"[1, 1, 4, 3]",neutral,0.1902
+SST-5,Llama-3.2-3B,0,"[1, 1, 4, 3]",positive,0.6784
+SST-5,Llama-3.2-3B,0,"[1, 1, 4, 3]",very positive,0.2957
+SST-5,Llama-3.2-3B,0,"[1, 7, 0, 7]",very negative,0.8208
+SST-5,Llama-3.2-3B,0,"[1, 7, 0, 7]",negative,0.3349
+SST-5,Llama-3.2-3B,0,"[1, 7, 0, 7]",neutral,0.1954
+SST-5,Llama-3.2-3B,0,"[1, 7, 0, 7]",positive,0.2941
+SST-5,Llama-3.2-3B,0,"[1, 7, 0, 7]",very positive,0.7293
+SST-5,Llama-3.2-3B,0,"[3, 0, 4, 7]",very negative,0.7204
+SST-5,Llama-3.2-3B,0,"[3, 0, 4, 7]",negative,0.545
+SST-5,Llama-3.2-3B,0,"[3, 0, 4, 7]",neutral,0.0951
+SST-5,Llama-3.2-3B,0,"[3, 0, 4, 7]",positive,0.5412
+SST-5,Llama-3.2-3B,0,"[3, 0, 4, 7]",very positive,0.5965
+SST-5,Llama-3.2-3B,0,"[3, 1, 2, 5]",very negative,0.724
+SST-5,Llama-3.2-3B,0,"[3, 1, 2, 5]",negative,0.5039
+SST-5,Llama-3.2-3B,0,"[3, 1, 2, 5]",neutral,0.0566
+SST-5,Llama-3.2-3B,0,"[3, 1, 2, 5]",positive,0.551
+SST-5,Llama-3.2-3B,0,"[3, 1, 2, 5]",very positive,0.6115
+SST-5,Llama-3.2-3B,0,"[3, 1, 4, 3]",very negative,0.6057
+SST-5,Llama-3.2-3B,0,"[3, 1, 4, 3]",negative,0.6793
+SST-5,Llama-3.2-3B,0,"[3, 1, 4, 3]",neutral,0.1491
+SST-5,Llama-3.2-3B,0,"[3, 1, 4, 3]",positive,0.602
+SST-5,Llama-3.2-3B,0,"[3, 1, 4, 3]",very positive,0.3459
+SST-5,Llama-3.2-3B,5,"[3, 1, 4, 5]",very negative,0.767
+SST-5,Llama-3.2-3B,5,"[3, 1, 4, 5]",negative,0.515
+SST-5,Llama-3.2-3B,5,"[3, 1, 4, 5]",neutral,0.0129
+SST-5,Llama-3.2-3B,5,"[3, 1, 4, 5]",positive,0.3961
+SST-5,Llama-3.2-3B,5,"[3, 1, 4, 5]",very positive,0.7744
+SST-5,Llama-3.2-3B,0,"[3, 1, 4, 5]",very negative,0.5197
+SST-5,Llama-3.2-3B,0,"[3, 1, 4, 5]",negative,0.7235
+SST-5,Llama-3.2-3B,0,"[3, 1, 4, 5]",neutral,0.0823
+SST-5,Llama-3.2-3B,0,"[3, 1, 4, 5]",positive,0.6784
+SST-5,Llama-3.2-3B,0,"[3, 1, 4, 5]",very positive,0.3784
+SST-5,Llama-3.2-3B,0,"[4, 0, 6, 7]",very negative,0.8674
+SST-5,Llama-3.2-3B,0,"[4, 0, 6, 7]",negative,0.3065
+SST-5,Llama-3.2-3B,0,"[4, 0, 6, 7]",neutral,0.072
+SST-5,Llama-3.2-3B,0,"[4, 0, 6, 7]",positive,0.3588
+SST-5,Llama-3.2-3B,0,"[4, 0, 6, 7]",very positive,0.7694
+SST-5,Llama-3.2-3B,0,"[4, 0, 7, 7]",very negative,0.7849
+SST-5,Llama-3.2-3B,0,"[4, 0, 7, 7]",negative,0.4597
+SST-5,Llama-3.2-3B,0,"[4, 0, 7, 7]",neutral,0.0771
+SST-5,Llama-3.2-3B,0,"[4, 0, 7, 7]",positive,0.5078
+SST-5,Llama-3.2-3B,0,"[4, 0, 7, 7]",very positive,0.5865
+SST-5,Llama-3.2-3B,0,"[4, 1, 3, 5]",very negative,0.6882
+SST-5,Llama-3.2-3B,0,"[4, 1, 3, 5]",negative,0.5245
+SST-5,Llama-3.2-3B,0,"[4, 1, 3, 5]",neutral,0.0617
+SST-5,Llama-3.2-3B,0,"[4, 1, 3, 5]",positive,0.5255
+SST-5,Llama-3.2-3B,0,"[4, 1, 3, 5]",very positive,0.6892
+SST-5,Llama-3.2-3B,5,"[4, 1, 7, 5]",very negative,0.8387
+SST-5,Llama-3.2-3B,5,"[4, 1, 7, 5]",negative,0.4502
+SST-5,Llama-3.2-3B,5,"[4, 1, 7, 5]",neutral,0.0771
+SST-5,Llama-3.2-3B,5,"[4, 1, 7, 5]",positive,0.2608
+SST-5,Llama-3.2-3B,5,"[4, 1, 7, 5]",very positive,0.7444
+SST-5,Llama-3.2-3B,0,"[4, 1, 7, 5]",very negative,0.681
+SST-5,Llama-3.2-3B,0,"[4, 1, 7, 5]",negative,0.5434
+SST-5,Llama-3.2-3B,0,"[4, 1, 7, 5]",neutral,0.072
+SST-5,Llama-3.2-3B,0,"[4, 1, 7, 5]",positive,0.5627
+SST-5,Llama-3.2-3B,0,"[4, 1, 7, 5]",very positive,0.6391
+SST-5,Llama-3.2-3B,0,"[4, 1, 7, 7]",very negative,0.5054
+SST-5,Llama-3.2-3B,0,"[4, 1, 7, 7]",negative,0.6619
+SST-5,Llama-3.2-3B,0,"[4, 1, 7, 7]",neutral,0.072
+SST-5,Llama-3.2-3B,0,"[4, 1, 7, 7]",positive,0.5922
+SST-5,Llama-3.2-3B,0,"[4, 1, 7, 7]",very positive,0.5664
+SST-5,Llama-3.2-3B,5,"[4, 4, 4, 3]",very negative,0.6846
+SST-5,Llama-3.2-3B,5,"[4, 4, 4, 3]",negative,0.5624
+SST-5,Llama-3.2-3B,5,"[4, 4, 4, 3]",neutral,0.0103
+SST-5,Llama-3.2-3B,5,"[4, 4, 4, 3]",positive,0.4745
+SST-5,Llama-3.2-3B,5,"[4, 4, 4, 3]",very positive,0.6892
+SST-5,Llama-3.2-3B,0,"[4, 4, 4, 3]",very negative,0.552
+SST-5,Llama-3.2-3B,0,"[4, 4, 4, 3]",negative,0.6098
+SST-5,Llama-3.2-3B,0,"[4, 4, 4, 3]",neutral,0.0848
+SST-5,Llama-3.2-3B,0,"[4, 4, 4, 3]",positive,0.7137
+SST-5,Llama-3.2-3B,0,"[4, 4, 4, 3]",very positive,0.3258
+SST-5,Llama-3.2-3B,0,"[4, 4, 6, 7]",very negative,0.8136
+SST-5,Llama-3.2-3B,0,"[4, 4, 6, 7]",negative,0.425
+SST-5,Llama-3.2-3B,0,"[4, 4, 6, 7]",neutral,0.0668
+SST-5,Llama-3.2-3B,0,"[4, 4, 6, 7]",positive,0.5059
+SST-5,Llama-3.2-3B,0,"[4, 4, 6, 7]",very positive,0.604
+SST-5,Llama-3.2-3B,0,"[5, 7, 7, 2]",very negative,0.7455
+SST-5,Llama-3.2-3B,0,"[5, 7, 7, 2]",negative,0.4392
+SST-5,Llama-3.2-3B,0,"[5, 7, 7, 2]",neutral,0.144
+SST-5,Llama-3.2-3B,0,"[5, 7, 7, 2]",positive,0.349
+SST-5,Llama-3.2-3B,0,"[5, 7, 7, 2]",very positive,0.6015
+SST-5,Llama-3.2-3B,5,"[7, 2, 0, 5]",very negative,0.4086
+SST-5,Llama-3.2-3B,5,"[7, 2, 0, 5]",negative,0.8389
+SST-5,Llama-3.2-3B,5,"[7, 2, 0, 5]",neutral,0.1414
+SST-5,Llama-3.2-3B,5,"[7, 2, 0, 5]",positive,0.5157
+SST-5,Llama-3.2-3B,5,"[7, 2, 0, 5]",very positive,0.3459
+SST-5,Llama-3.2-3B,0,"[7, 2, 0, 5]",very negative,0.8459
+SST-5,Llama-3.2-3B,0,"[7, 2, 0, 5]",negative,0.3002
+SST-5,Llama-3.2-3B,0,"[7, 2, 0, 5]",neutral,0.2057
+SST-5,Llama-3.2-3B,0,"[7, 2, 0, 5]",positive,0.5902
+SST-5,Llama-3.2-3B,0,"[7, 2, 0, 5]",very positive,0.386
+SST-5,Llama-3.2-3B,0,"[7, 4, 0, 5]",very negative,0.8351
+SST-5,Llama-3.2-3B,0,"[7, 4, 0, 5]",negative,0.3902
+SST-5,Llama-3.2-3B,0,"[7, 4, 0, 5]",neutral,0.0874
+SST-5,Llama-3.2-3B,0,"[7, 4, 0, 5]",positive,0.6549
+SST-5,Llama-3.2-3B,0,"[7, 4, 0, 5]",very positive,0.396
+SST-5,Qwen2.5-7B,5,"[3, 1, 4, 5]",very negative,0.1649
+SST-5,Qwen2.5-7B,5,"[3, 1, 4, 5]",negative,0.8705
+SST-5,Qwen2.5-7B,5,"[3, 1, 4, 5]",neutral,0.2159
+SST-5,Qwen2.5-7B,5,"[3, 1, 4, 5]",positive,0.8176
+SST-5,Qwen2.5-7B,5,"[3, 1, 4, 5]",very positive,0.2331
+SST-5,Qwen2.5-7B,0,"[3, 1, 4, 5]",very negative,0.2007
+SST-5,Qwen2.5-7B,0,"[3, 1, 4, 5]",negative,0.7804
+SST-5,Qwen2.5-7B,0,"[3, 1, 4, 5]",neutral,0.108
+SST-5,Qwen2.5-7B,0,"[3, 1, 4, 5]",positive,0.8471
+SST-5,Qwen2.5-7B,0,"[3, 1, 4, 5]",very positive,0.0777
+Yelp-5,Qwen2.5-7B,5,"[3, 1, 4, 5]",very negative,0.686
+Yelp-5,Qwen2.5-7B,5,"[3, 1, 4, 5]",negative,0.778
+Yelp-5,Qwen2.5-7B,5,"[3, 1, 4, 5]",neutral,0.172
+Yelp-5,Qwen2.5-7B,5,"[3, 1, 4, 5]",positive,0.678
+Yelp-5,Qwen2.5-7B,5,"[3, 1, 4, 5]",very positive,0.73
+Yelp-5,Qwen2.5-7B,0,"[3, 1, 4, 5]",very negative,0.726
+Yelp-5,Qwen2.5-7B,0,"[3, 1, 4, 5]",negative,0.71
+Yelp-5,Qwen2.5-7B,0,"[3, 1, 4, 5]",neutral,0.112
+Yelp-5,Qwen2.5-7B,0,"[3, 1, 4, 5]",positive,0.72
+Yelp-5,Qwen2.5-7B,0,"[3, 1, 4, 5]",very positive,0.65
+Yelp-5,Llama-3.2-3B,0,"[0, 1, 2, 3]",very negative,0.856
+Yelp-5,Llama-3.2-3B,0,"[0, 1, 2, 3]",negative,0.608
+Yelp-5,Llama-3.2-3B,0,"[0, 1, 2, 3]",neutral,0.134
+Yelp-5,Llama-3.2-3B,0,"[0, 1, 2, 3]",positive,0.66
+Yelp-5,Llama-3.2-3B,0,"[0, 1, 2, 3]",very positive,0.656
+Yelp-5,Llama-3.2-3B,0,"[1, 1, 4, 3]",very negative,0.928
+Yelp-5,Llama-3.2-3B,0,"[1, 1, 4, 3]",negative,0.39
+Yelp-5,Llama-3.2-3B,0,"[1, 1, 4, 3]",neutral,0.224
+Yelp-5,Llama-3.2-3B,0,"[1, 1, 4, 3]",positive,0.63
+Yelp-5,Llama-3.2-3B,0,"[1, 1, 4, 3]",very positive,0.69
+Yelp-5,Llama-3.2-3B,0,"[1, 7, 0, 7]",very negative,0.972
+Yelp-5,Llama-3.2-3B,0,"[1, 7, 0, 7]",negative,0.048
+Yelp-5,Llama-3.2-3B,0,"[1, 7, 0, 7]",neutral,0.258
+Yelp-5,Llama-3.2-3B,0,"[1, 7, 0, 7]",positive,0.056
+Yelp-5,Llama-3.2-3B,0,"[1, 7, 0, 7]",very positive,0.96
+Yelp-5,Llama-3.2-3B,0,"[3, 0, 4, 7]",very negative,0.914
+Yelp-5,Llama-3.2-3B,0,"[3, 0, 4, 7]",negative,0.352
+Yelp-5,Llama-3.2-3B,0,"[3, 0, 4, 7]",neutral,0.078
+Yelp-5,Llama-3.2-3B,0,"[3, 0, 4, 7]",positive,0.606
+Yelp-5,Llama-3.2-3B,0,"[3, 0, 4, 7]",very positive,0.768
+Yelp-5,Llama-3.2-3B,0,"[3, 1, 2, 5]",very negative,0.856
+Yelp-5,Llama-3.2-3B,0,"[3, 1, 2, 5]",negative,0.328
+Yelp-5,Llama-3.2-3B,0,"[3, 1, 2, 5]",neutral,0.056
+Yelp-5,Llama-3.2-3B,0,"[3, 1, 2, 5]",positive,0.356
+Yelp-5,Llama-3.2-3B,0,"[3, 1, 2, 5]",very positive,0.848
+Yelp-5,Llama-3.2-3B,0,"[3, 1, 4, 3]",very negative,0.874
+Yelp-5,Llama-3.2-3B,0,"[3, 1, 4, 3]",negative,0.544
+Yelp-5,Llama-3.2-3B,0,"[3, 1, 4, 3]",neutral,0.178
+Yelp-5,Llama-3.2-3B,0,"[3, 1, 4, 3]",positive,0.684
+Yelp-5,Llama-3.2-3B,0,"[3, 1, 4, 3]",very positive,0.634
+Yelp-5,Alpaca-7B,5,"[3, 1, 4, 5]",very negative,0.316
+Yelp-5,Alpaca-7B,5,"[3, 1, 4, 5]",negative,0.884
+Yelp-5,Alpaca-7B,5,"[3, 1, 4, 5]",neutral,0.522
+Yelp-5,Alpaca-7B,5,"[3, 1, 4, 5]",positive,0.18
+Yelp-5,Alpaca-7B,5,"[3, 1, 4, 5]",very positive,0.858
+Yelp-5,Alpaca-7B,0,"[3, 1, 4, 5]",very negative,0.008
+Yelp-5,Alpaca-7B,0,"[3, 1, 4, 5]",negative,0.93
+Yelp-5,Alpaca-7B,0,"[3, 1, 4, 5]",neutral,0.0
+Yelp-5,Alpaca-7B,0,"[3, 1, 4, 5]",positive,0.914
+Yelp-5,Alpaca-7B,0,"[3, 1, 4, 5]",very positive,0.004
+Yelp-5,Llama-3.2-3B,5,"[3, 1, 4, 5]",very negative,0.946
+Yelp-5,Llama-3.2-3B,5,"[3, 1, 4, 5]",negative,0.356
+Yelp-5,Llama-3.2-3B,5,"[3, 1, 4, 5]",neutral,0.04
+Yelp-5,Llama-3.2-3B,5,"[3, 1, 4, 5]",positive,0.412
+Yelp-5,Llama-3.2-3B,5,"[3, 1, 4, 5]",very positive,0.888
+Yelp-5,Llama-3.2-3B,0,"[3, 1, 4, 5]",very negative,0.758
+Yelp-5,Llama-3.2-3B,0,"[3, 1, 4, 5]",negative,0.402
+Yelp-5,Llama-3.2-3B,0,"[3, 1, 4, 5]",neutral,0.11
+Yelp-5,Llama-3.2-3B,0,"[3, 1, 4, 5]",positive,0.512
+Yelp-5,Llama-3.2-3B,0,"[3, 1, 4, 5]",very positive,0.748
+Yelp-5,Llama-3.2-3B,0,"[4, 0, 4, 7]",very negative,0.906
+Yelp-5,Llama-3.2-3B,0,"[4, 0, 4, 7]",negative,0.33
+Yelp-5,Llama-3.2-3B,0,"[4, 0, 4, 7]",neutral,0.034
+Yelp-5,Llama-3.2-3B,0,"[4, 0, 4, 7]",positive,0.712
+Yelp-5,Llama-3.2-3B,0,"[4, 0, 4, 7]",very positive,0.724
+Yelp-5,Llama-3.2-3B,0,"[4, 0, 6, 7]",very negative,0.962
+Yelp-5,Llama-3.2-3B,0,"[4, 0, 6, 7]",negative,0.11
+Yelp-5,Llama-3.2-3B,0,"[4, 0, 6, 7]",neutral,0.404
+Yelp-5,Llama-3.2-3B,0,"[4, 0, 6, 7]",positive,0.16
+Yelp-5,Llama-3.2-3B,0,"[4, 0, 6, 7]",very positive,0.95
+Yelp-5,Llama-3.2-3B,0,"[4, 0, 7, 7]",very negative,0.912
+Yelp-5,Llama-3.2-3B,0,"[4, 0, 7, 7]",negative,0.448
+Yelp-5,Llama-3.2-3B,0,"[4, 0, 7, 7]",neutral,0.352
+Yelp-5,Llama-3.2-3B,0,"[4, 0, 7, 7]",positive,0.564
+Yelp-5,Llama-3.2-3B,0,"[4, 0, 7, 7]",very positive,0.778
+Yelp-5,Llama-3.2-3B,0,"[4, 1, 1, 2]",very negative,0.796
+Yelp-5,Llama-3.2-3B,0,"[4, 1, 1, 2]",negative,0.476
+Yelp-5,Llama-3.2-3B,0,"[4, 1, 1, 2]",neutral,0.156
+Yelp-5,Llama-3.2-3B,0,"[4, 1, 1, 2]",positive,0.468
+Yelp-5,Llama-3.2-3B,0,"[4, 1, 1, 2]",very positive,0.73
+Yelp-5,Llama-3.2-3B,0,"[4, 1, 3, 2]",very negative,0.744
+Yelp-5,Llama-3.2-3B,0,"[4, 1, 3, 2]",negative,0.532
+Yelp-5,Llama-3.2-3B,0,"[4, 1, 3, 2]",neutral,0.11
+Yelp-5,Llama-3.2-3B,0,"[4, 1, 3, 2]",positive,0.368
+Yelp-5,Llama-3.2-3B,0,"[4, 1, 3, 2]",very positive,0.8
+Yelp-5,Llama-3.2-3B,0,"[4, 1, 3, 5]",very negative,0.886
+Yelp-5,Llama-3.2-3B,0,"[4, 1, 3, 5]",negative,0.428
+Yelp-5,Llama-3.2-3B,0,"[4, 1, 3, 5]",neutral,0.096
+Yelp-5,Llama-3.2-3B,0,"[4, 1, 3, 5]",positive,0.264
+Yelp-5,Llama-3.2-3B,0,"[4, 1, 3, 5]",very positive,0.922
+Yelp-5,Llama-3.2-3B,0,"[4, 1, 4, 3]",very negative,0.834
+Yelp-5,Llama-3.2-3B,0,"[4, 1, 4, 3]",negative,0.548
+Yelp-5,Llama-3.2-3B,0,"[4, 1, 4, 3]",neutral,0.176
+Yelp-5,Llama-3.2-3B,0,"[4, 1, 4, 3]",positive,0.756
+Yelp-5,Llama-3.2-3B,0,"[4, 1, 4, 3]",very positive,0.542
+Yelp-5,Alpaca-7B,5,"[4, 1, 7, 5]",very negative,0.462
+Yelp-5,Alpaca-7B,5,"[4, 1, 7, 5]",negative,0.812
+Yelp-5,Alpaca-7B,5,"[4, 1, 7, 5]",neutral,0.588
+Yelp-5,Alpaca-7B,5,"[4, 1, 7, 5]",positive,0.152
+Yelp-5,Alpaca-7B,5,"[4, 1, 7, 5]",very positive,0.842
+Yelp-5,Alpaca-7B,0,"[4, 1, 7, 5]",very negative,0.398
+Yelp-5,Alpaca-7B,0,"[4, 1, 7, 5]",negative,0.642
+Yelp-5,Alpaca-7B,0,"[4, 1, 7, 5]",neutral,0.144
+Yelp-5,Alpaca-7B,0,"[4, 1, 7, 5]",positive,0.908
+Yelp-5,Alpaca-7B,0,"[4, 1, 7, 5]",very positive,0.086
+Yelp-5,Llama-3.2-3B,5,"[4, 1, 7, 5]",very negative,0.936
+Yelp-5,Llama-3.2-3B,5,"[4, 1, 7, 5]",negative,0.358
+Yelp-5,Llama-3.2-3B,5,"[4, 1, 7, 5]",neutral,0.19
+Yelp-5,Llama-3.2-3B,5,"[4, 1, 7, 5]",positive,0.39
+Yelp-5,Llama-3.2-3B,5,"[4, 1, 7, 5]",very positive,0.832
+Yelp-5,Llama-3.2-3B,0,"[4, 1, 7, 5]",very negative,0.866
+Yelp-5,Llama-3.2-3B,0,"[4, 1, 7, 5]",negative,0.43
+Yelp-5,Llama-3.2-3B,0,"[4, 1, 7, 5]",neutral,0.192
+Yelp-5,Llama-3.2-3B,0,"[4, 1, 7, 5]",positive,0.334
+Yelp-5,Llama-3.2-3B,0,"[4, 1, 7, 5]",very positive,0.878
+Yelp-5,Llama-3.2-3B,0,"[4, 1, 7, 7]",very negative,0.05
+Yelp-5,Llama-3.2-3B,0,"[4, 1, 7, 7]",negative,0.836
+Yelp-5,Llama-3.2-3B,0,"[4, 1, 7, 7]",neutral,0.186
+Yelp-5,Llama-3.2-3B,0,"[4, 1, 7, 7]",positive,0.814
+Yelp-5,Llama-3.2-3B,0,"[4, 1, 7, 7]",very positive,0.038
+Yelp-5,Alpaca-7B,5,"[4, 4, 4, 3]",very negative,0.31
+Yelp-5,Alpaca-7B,5,"[4, 4, 4, 3]",negative,0.794
+Yelp-5,Alpaca-7B,5,"[4, 4, 4, 3]",neutral,0.66
+Yelp-5,Alpaca-7B,5,"[4, 4, 4, 3]",positive,0.174
+Yelp-5,Alpaca-7B,5,"[4, 4, 4, 3]",very positive,0.832
+Yelp-5,Alpaca-7B,0,"[4, 4, 4, 3]",very negative,0.982
+Yelp-5,Alpaca-7B,0,"[4, 4, 4, 3]",negative,0.02
+Yelp-5,Alpaca-7B,0,"[4, 4, 4, 3]",neutral,0.024
+Yelp-5,Alpaca-7B,0,"[4, 4, 4, 3]",positive,0.196
+Yelp-5,Alpaca-7B,0,"[4, 4, 4, 3]",very positive,0.904
+Yelp-5,Llama-3.2-3B,5,"[4, 4, 4, 3]",very negative,0.89
+Yelp-5,Llama-3.2-3B,5,"[4, 4, 4, 3]",negative,0.512
+Yelp-5,Llama-3.2-3B,5,"[4, 4, 4, 3]",neutral,0.07
+Yelp-5,Llama-3.2-3B,5,"[4, 4, 4, 3]",positive,0.576
+Yelp-5,Llama-3.2-3B,5,"[4, 4, 4, 3]",very positive,0.798
+Yelp-5,Llama-3.2-3B,0,"[4, 4, 4, 3]",very negative,0.796
+Yelp-5,Llama-3.2-3B,0,"[4, 4, 4, 3]",negative,0.648
+Yelp-5,Llama-3.2-3B,0,"[4, 4, 4, 3]",neutral,0.186
+Yelp-5,Llama-3.2-3B,0,"[4, 4, 4, 3]",positive,0.798
+Yelp-5,Llama-3.2-3B,0,"[4, 4, 4, 3]",very positive,0.488
+Yelp-5,Llama-3.2-3B,0,"[4, 4, 6, 7]",very negative,0.924
+Yelp-5,Llama-3.2-3B,0,"[4, 4, 6, 7]",negative,0.336
+Yelp-5,Llama-3.2-3B,0,"[4, 4, 6, 7]",neutral,0.236
+Yelp-5,Llama-3.2-3B,0,"[4, 4, 6, 7]",positive,0.41
+Yelp-5,Llama-3.2-3B,0,"[4, 4, 6, 7]",very positive,0.812
+Yelp-5,Llama-3.2-3B,0,"[5, 7, 7, 2]",very negative,0.962
+Yelp-5,Llama-3.2-3B,0,"[5, 7, 7, 2]",negative,0.204
+Yelp-5,Llama-3.2-3B,0,"[5, 7, 7, 2]",neutral,0.208
+Yelp-5,Llama-3.2-3B,0,"[5, 7, 7, 2]",positive,0.126
+Yelp-5,Llama-3.2-3B,0,"[5, 7, 7, 2]",very positive,0.926
+Yelp-5,Alpaca-7B,5,"[7, 2, 0, 5]",very negative,0.676
+Yelp-5,Alpaca-7B,5,"[7, 2, 0, 5]",negative,0.74
+Yelp-5,Alpaca-7B,5,"[7, 2, 0, 5]",neutral,0.572
+Yelp-5,Alpaca-7B,5,"[7, 2, 0, 5]",positive,0.11
+Yelp-5,Alpaca-7B,5,"[7, 2, 0, 5]",very positive,0.862
+Yelp-5,Alpaca-7B,0,"[7, 2, 0, 5]",very negative,0.004
+Yelp-5,Alpaca-7B,0,"[7, 2, 0, 5]",negative,0.888
+Yelp-5,Alpaca-7B,0,"[7, 2, 0, 5]",neutral,0.07
+Yelp-5,Alpaca-7B,0,"[7, 2, 0, 5]",positive,0.948
+Yelp-5,Alpaca-7B,0,"[7, 2, 0, 5]",very positive,0.004
+Yelp-5,Llama-3.2-3B,5,"[7, 2, 0, 5]",very negative,0.81
+Yelp-5,Llama-3.2-3B,5,"[7, 2, 0, 5]",negative,0.7
+Yelp-5,Llama-3.2-3B,5,"[7, 2, 0, 5]",neutral,0.256
+Yelp-5,Llama-3.2-3B,5,"[7, 2, 0, 5]",positive,0.642
+Yelp-5,Llama-3.2-3B,5,"[7, 2, 0, 5]",very positive,0.662
+Yelp-5,Llama-3.2-3B,0,"[7, 2, 0, 5]",very negative,0.962
+Yelp-5,Llama-3.2-3B,0,"[7, 2, 0, 5]",negative,0.236
+Yelp-5,Llama-3.2-3B,0,"[7, 2, 0, 5]",neutral,0.144
+Yelp-5,Llama-3.2-3B,0,"[7, 2, 0, 5]",positive,0.51
+Yelp-5,Llama-3.2-3B,0,"[7, 2, 0, 5]",very positive,0.822
+Yelp-5,Llama-3.2-3B,0,"[7, 4, 0, 5]",very negative,0.948
+Yelp-5,Llama-3.2-3B,0,"[7, 4, 0, 5]",negative,0.348
+Yelp-5,Llama-3.2-3B,0,"[7, 4, 0, 5]",neutral,0.244
+Yelp-5,Llama-3.2-3B,0,"[7, 4, 0, 5]",positive,0.536
+Yelp-5,Llama-3.2-3B,0,"[7, 4, 0, 5]",very positive,0.782

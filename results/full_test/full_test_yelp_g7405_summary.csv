@@ -1,0 +1,16 @@
+"tag","dataset","model","prompt_format","shots","genome","prompt","n_samples","exact_accuracy","ordinal_score","n_correct","n_unrecognized"
+"yelp_g7405","yelp5","meta-llama/Llama-3.2-3B-Instruct","chat","0","[7, 4, 0, 5]","Weigh all evidence in the review and select the label that best represents the overall tone. Possible labels: very negative, negative, neutral, positive, very positive. Sentiment:","2500","0.5716","0.8586","1429","68"
+
+"per_class:","label_id","label","support","correct","recall"
+"","0","very negative","500","474","0.948"
+"","1","negative","500","174","0.348"
+"","2","neutral","500","122","0.244"
+"","3","positive","500","268","0.536"
+"","4","very positive","500","391","0.782"
+
+"confusion (row=actual, col=predicted)","very negative","negative","neutral","positive","very positive","unrecognized"
+"very negative","474","18","1","0","3","4"
+"negative","287","174","17","5","5","12"
+"neutral","63","155","122","117","24","19"
+"positive","3","11","27","268","169","22"
+"very positive","1","2","3","92","391","11"

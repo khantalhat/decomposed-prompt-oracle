@@ -1,0 +1,42 @@
+{
+  "INTRO": [
+    "You are an expert sentiment analysis system.",
+    "You are a specialist in natural language sentiment analysis with expertise in film criticism.",
+    "You have extensive experience reading and classifying movie reviews by sentiment.",
+    "Note: in film criticism, strong feelings are often expressed in understated or measured language.",
+    "Sentiment in film reviews can be nuanced — a calm or qualified tone does not imply mild sentiment.",
+    "Treat this as an ordinal classification task: five sentiment levels from very negative to very positive.",
+    "Form your judgment only after reading the review in full — first impressions can be misleading.",
+    ""
+  ],
+  "TASK": [
+    "Classify the sentiment of the review.",
+    "Identify both the direction (positive or negative) and the intensity (mild or strong) of the sentiment.",
+    "Determine the reviewer's dominant overall sentiment, not the sentiment of individual phrases.",
+    "Distinguish between mild and strong sentiment — both negative and positive have weak and strong forms.",
+    "Weigh all evidence in the review and select the label that best represents the overall tone.",
+    "Do not anchor on the first phrase — read the entire review and judge the overall picture.",
+    "Identify what the reviewer ultimately concludes about the film, not just their reaction to specific scenes.",
+    ""
+  ],
+  "LABELS": [
+    "Possible labels: very negative, negative, neutral, positive, very positive.",
+    "Labels: very negative, negative, neutral, positive, very positive. positive means the reviewer genuinely recommends the film despite flaws. neutral means the reviewer is neither recommending nor discouraging — genuinely on the fence.",
+    "Labels: very negative, negative, neutral, positive, very positive. very negative=strong disappointment or contempt, even if expressed calmly; negative=mild or qualified criticism; neutral=genuinely balanced or ambiguous overall; positive=genuine approval despite some reservations; very positive=strong admiration, even if expressed briefly.",
+    "Labels: very negative, negative, neutral, positive, very positive. very negative means the reviewer strongly dislikes the film, even if expressed in measured language. negative means mild or partial criticism only.",
+    "Labels: very negative, negative, neutral, positive, very positive. very positive means strong admiration or delight, even if expressed briefly or with understatement. positive means genuine appreciation that includes reservations.",
+    "Labels: very negative, negative, neutral, positive, very positive. Use neutral only when the review is genuinely balanced overall — not just because it contains some negative phrases alongside a positive conclusion.",
+    "Five levels of sentiment: very negative < negative < neutral < positive < very positive. Use the extremes when the overall judgment is clearly strong, not just mildly so.",
+    "Labels: very negative, negative, neutral, positive, very positive. very negative requires strong overall dislike — not just some criticism. very positive requires strong overall admiration — not just some praise. neutral requires genuine balance — not a positive conclusion with some reservations."
+  ],
+  "OUTPUT": [
+    "Return only the label.",
+    "Do not write any explanation, reasoning, or full sentences. Output the label only.",
+    "Answer:",
+    "Your entire response must be exactly one of the five labels. Nothing else.",
+    "Do not reason aloud. Do not summarise the review. Output the label only.",
+    "Sentiment:",
+    "Any text beyond the label itself is an error. Output the label only.",
+    ""
+  ]
+}

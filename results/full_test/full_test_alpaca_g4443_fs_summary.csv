@@ -1,0 +1,16 @@
+"tag","model","prompt_format","shots","genome","prompt","n_samples","exact_accuracy","ordinal_score","n_correct","n_unrecognized"
+"alpaca_g4443_fs","chavinlo/alpaca-native","alpaca","5","[4, 4, 4, 3]","Sentiment in film reviews can be nuanced — a calm or qualified tone does not imply mild sentiment. Weigh all evidence in the review and select the label that best represents the overall tone. Labels: very negative, negative, neutral, positive, very positive. very positive means strong admiration or delight, even if expressed briefly or with understatement. positive means genuine appreciation that includes reservations. Your entire response must be exactly one of the five labels. Nothing else.","2210","0.49638","0.856335","1097","0"
+
+"per_class:","label_id","label","support","correct","recall"
+"","0","very negative","279","16","0.0573"
+"","1","negative","633","564","0.891"
+"","2","neutral","389","133","0.3419"
+"","3","positive","510","225","0.4412"
+"","4","very positive","399","159","0.3985"
+
+"confusion (row=actual, col=predicted)","very negative","negative","neutral","positive","very positive","unrecognized"
+"very negative","16","260","3","0","0","0"
+"negative","9","564","55","1","4","0"
+"neutral","3","199","133","37","17","0"
+"positive","6","59","144","225","76","0"
+"very positive","1","10","31","198","159","0"

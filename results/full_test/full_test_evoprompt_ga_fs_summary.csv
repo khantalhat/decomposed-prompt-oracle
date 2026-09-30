@@ -1,0 +1,16 @@
+"tag","dataset","model","prompt_format","shots","genome","prompt","n_samples","exact_accuracy","ordinal_score","n_correct","n_unrecognized"
+"evoprompt_ga_fs","sst5","chavinlo/alpaca-native","alpaca","5","baseline:evoprompt_ga","Have your friend evaluate the movie they had just seen and provide a summary opinion (e.g. terrible, bad, okay, good, or great) to determine the sentiment of the movie review.","2210","0.517647","0.864819","1144","0"
+
+"per_class:","label_id","label","support","correct","recall"
+"","0","very negative","279","88","0.3154"
+"","1","negative","633","463","0.7314"
+"","2","neutral","389","151","0.3882"
+"","3","positive","510","222","0.4353"
+"","4","very positive","399","220","0.5514"
+
+"confusion (row=actual, col=predicted)","very negative","negative","neutral","positive","very positive","unrecognized"
+"very negative","88","183","8","0","0","0"
+"negative","63","463","100","4","3","0"
+"neutral","11","164","151","44","19","0"
+"positive","8","38","136","222","106","0"
+"very positive","1","2","20","156","220","0"

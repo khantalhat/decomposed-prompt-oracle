@@ -1,0 +1,16 @@
+"tag","dataset","model","prompt_format","shots","genome","prompt","n_samples","exact_accuracy","ordinal_score","n_correct","n_unrecognized"
+"yelp_g7205_fs","yelp5","meta-llama/Llama-3.2-3B-Instruct","chat","5","[7, 2, 0, 5]","Determine the reviewer's dominant overall sentiment, not the sentiment of individual phrases. Possible labels: very negative, negative, neutral, positive, very positive. Sentiment:","2500","0.614","0.8961","1535","0"
+
+"per_class:","label_id","label","support","correct","recall"
+"","0","very negative","500","405","0.81"
+"","1","negative","500","350","0.7"
+"","2","neutral","500","128","0.256"
+"","3","positive","500","321","0.642"
+"","4","very positive","500","331","0.662"
+
+"confusion (row=actual, col=predicted)","very negative","negative","neutral","positive","very positive","unrecognized"
+"very negative","405","92","2","1","0","0"
+"negative","135","350","14","1","0","0"
+"neutral","18","238","128","107","9","0"
+"positive","0","25","51","321","103","0"
+"very positive","2","2","7","158","331","0"

@@ -1,0 +1,16 @@
+"tag","dataset","model","prompt_format","shots","genome","prompt","n_samples","exact_accuracy","ordinal_score","n_correct","n_unrecognized"
+"yelp_g4175_alpaca","yelp5","chavinlo/alpaca-native","alpaca","0","[4, 1, 7, 5]","Sentiment in customer reviews can be nuanced — a calm or qualified tone does not imply mild sentiment. Identify both the direction (positive or negative) and the intensity (mild or strong) of the sentiment. Labels: very negative, negative, neutral, positive, very positive. very negative requires strong overall dislike — not just some criticism. very positive requires strong overall admiration — not just some praise. neutral requires genuine balance — not a positive conclusion with some reservations. Sentiment:","2500","0.4356","0.845","1089","6"
+
+"per_class:","label_id","label","support","correct","recall"
+"","0","very negative","500","199","0.398"
+"","1","negative","500","321","0.642"
+"","2","neutral","500","72","0.144"
+"","3","positive","500","454","0.908"
+"","4","very positive","500","43","0.086"
+
+"confusion (row=actual, col=predicted)","very negative","negative","neutral","positive","very positive","unrecognized"
+"very negative","199","294","3","3","1","0"
+"negative","136","321","22","20","1","0"
+"neutral","37","166","72","216","4","5"
+"positive","7","20","11","454","7","1"
+"very positive","1","4","1","451","43","0"

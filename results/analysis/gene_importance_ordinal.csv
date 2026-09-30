@@ -1,0 +1,5 @@
+gene,eta2,allele_range,best_allele,worst_allele
+INTRO,0.0349,0.0352,nuance note,ordinal framing
+TASK,0.0467,0.0476,weigh evidence,mild vs strong
+LABELS,0.0311,0.0368,pos-end bound,ordinal scale
+OUTPUT,0.0707,0.0593,exactly-one-label,(empty)

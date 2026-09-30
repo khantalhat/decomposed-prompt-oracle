@@ -1,0 +1,5 @@
+gene,eta2,allele_range,best_allele,worst_allele
+INTRO,0.1256,0.0679,experienced reviewer,read-in-full
+TASK,0.0817,0.0432,classify (minimal),mild vs strong
+LABELS,0.045,0.0342,pos-end bound,neg-end bound
+OUTPUT,0.0833,0.0576,no explanation,penalty framing

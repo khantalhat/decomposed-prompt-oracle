@@ -1,0 +1,65 @@
+a_label,b_label,a_idx,b_idx,exact
+expert role,classify (minimal),0,0,0.4577
+expert role,direction+intensity,0,1,0.4275
+expert role,dominant sentiment,0,2,0.4508
+expert role,mild vs strong,0,3,0.4361
+expert role,weigh evidence,0,4,0.4603
+expert role,anti-anchor,0,5,0.4283
+expert role,final conclusion,0,6,0.4382
+expert role,(empty),0,7,0.4632
+film specialist,classify (minimal),1,0,0.4591
+film specialist,direction+intensity,1,1,0.4686
+film specialist,dominant sentiment,1,2,0.4496
+film specialist,mild vs strong,1,3,0.4058
+film specialist,weigh evidence,1,4,0.4535
+film specialist,anti-anchor,1,5,0.4148
+film specialist,final conclusion,1,6,0.4214
+film specialist,(empty),1,7,0.4673
+experienced reviewer,classify (minimal),2,0,0.468
+experienced reviewer,direction+intensity,2,1,0.452
+experienced reviewer,dominant sentiment,2,2,0.4524
+experienced reviewer,mild vs strong,2,3,0.4697
+experienced reviewer,weigh evidence,2,4,0.4761
+experienced reviewer,anti-anchor,2,5,0.4536
+experienced reviewer,final conclusion,2,6,0.4609
+experienced reviewer,(empty),2,7,0.4705
+understatement note,classify (minimal),3,0,0.4652
+understatement note,direction+intensity,3,1,0.4743
+understatement note,dominant sentiment,3,2,0.4374
+understatement note,mild vs strong,3,3,0.4113
+understatement note,weigh evidence,3,4,0.4484
+understatement note,anti-anchor,3,5,0.3897
+understatement note,final conclusion,3,6,0.4056
+understatement note,(empty),3,7,0.4299
+nuance note,classify (minimal),4,0,0.4671
+nuance note,direction+intensity,4,1,0.4749
+nuance note,dominant sentiment,4,2,0.4605
+nuance note,mild vs strong,4,3,0.4296
+nuance note,weigh evidence,4,4,0.4636
+nuance note,anti-anchor,4,5,0.4376
+nuance note,final conclusion,4,6,0.4456
+nuance note,(empty),4,7,0.4594
+ordinal framing,classify (minimal),5,0,0.4485
+ordinal framing,direction+intensity,5,1,0.3826
+ordinal framing,dominant sentiment,5,2,0.4177
+ordinal framing,mild vs strong,5,3,0.4023
+ordinal framing,weigh evidence,5,4,0.4584
+ordinal framing,anti-anchor,5,5,0.4358
+ordinal framing,final conclusion,5,6,0.4195
+ordinal framing,(empty),5,7,0.4351
+read-in-full,classify (minimal),6,0,0.4248
+read-in-full,direction+intensity,6,1,0.4149
+read-in-full,dominant sentiment,6,2,0.3938
+read-in-full,mild vs strong,6,3,0.4028
+read-in-full,weigh evidence,6,4,0.4232
+read-in-full,anti-anchor,6,5,0.3682
+read-in-full,final conclusion,6,6,0.3544
+read-in-full,(empty),6,7,0.3783
+(empty),classify (minimal),7,0,0.4567
+(empty),direction+intensity,7,1,0.4413
+(empty),dominant sentiment,7,2,0.4459
+(empty),mild vs strong,7,3,0.3441
+(empty),weigh evidence,7,4,0.4491
+(empty),anti-anchor,7,5,0.3819
+(empty),final conclusion,7,6,0.4099
+(empty),(empty),7,7,0.4358
