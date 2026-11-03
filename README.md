@@ -53,7 +53,13 @@ figures.
 `analyze.py` emits them, so the directory matches the code's output.
 
 Rebuilding the oracle itself needs a GPU (`code/brute_force/`), roughly 4,096 x 250
-generations on Llama-3.2-3B.
+generations on Llama-3.2-3B. It was run as two shards on two GPUs:
+`brute_force_gpu1.py` covers genomes 0-2047 and `brute_force_gpu2.py` covers 2048-4095.
+The two files are identical apart from that range and their output filename, and
+`combine_brute_force.py` merges the halves into `brute_force_combined.csv`. To run it in
+one pass on a single GPU, set `START_IDX = 0` and `END_IDX = 4096` in either file.
+`brute_force_gpu1.py` is also the module the other scripts import their evaluation logic
+from, so the whole pipeline scores genomes identically.
 
 ## Reading the allele library
 
