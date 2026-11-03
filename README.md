@@ -99,7 +99,3 @@ demonstrations reproducible:
 Neither dataset is relicensed by this release; see `LICENCE` section 3. Model weights are not
 redistributed either — the scripts download them from Hugging Face, and each model keeps its
 own licence.
-
-## Citation
-
-Add the IEEE Access reference once assigned.
