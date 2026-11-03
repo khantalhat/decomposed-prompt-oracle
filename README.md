@@ -48,10 +48,6 @@ Each rewrites `results/analysis/`, so a clean checkout regenerates those CSVs fr
 oracle and the convergence traces alone. `make_paper_figures.py` additionally redraws the
 figures.
 
-`results/analysis/` also holds three files that no table or figure in the paper uses
-(`additive_rule.csv` and two further interaction heat maps). They are kept because
-`analyze.py` emits them, so the directory matches the code's output.
-
 Rebuilding the oracle itself needs a GPU (`code/brute_force/`), roughly 4,096 x 250
 generations on Llama-3.2-3B. It was run as two shards on two GPUs:
 `brute_force_gpu1.py` covers genomes 0-2047 and `brute_force_gpu2.py` covers 2048-4095.
@@ -87,16 +83,6 @@ queried at temperature 0 against a pinned dated snapshot and is inherently less 
 
 The `evolution/` traces come from a `(mu+lambda)` evolutionary algorithm with mutation only:
 a single gene is reset per offspring, and there is no crossover.
-
-## Not included, and why
-
-- **Per-item test predictions** (76 MB), apart from the two the paired EvoPrompt comparison
-  needs. The `*_summary.csv` files already carry per-class recall and the full confusion
-  matrix, so every other reported number, including balanced accuracy, is derivable without
-  them; McNemar is the exception, since it is computed item by item.
-- **Per-item evolution failure dumps** (460 MB). No reported number depends on them.
-- **Superseded runs.** An earlier multi-objective (NSGA-II) formulation and a set of
-  pre-float32 runs were replaced during revision and are not part of any result in the paper.
 
 ## Data provenance
 
