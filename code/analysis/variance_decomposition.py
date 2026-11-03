@@ -1,27 +1,20 @@
 """
 Complete variance decomposition of the oracle (main + 2-way + 3-way + 4-way)
 ===========================================================================
-Reads ONLY the pre-computed oracle (zero GPU):
-  - results/brute_force/brute_force_combined.csv
+Reads results/brute_force/brute_force_combined.csv.
 
-Why the decomposition can be exact rather than estimated:
-  the design is a complete 8^4 factorial with exactly one observation per cell,
-  and each observation is deterministic (greedy decoding, pinned float32, the same
-  250 validation items). There is therefore no sampling error and no residual term:
-  the four orders account for 100% of the variance by construction.
+The design is a complete 8^4 factorial with one deterministic observation per
+cell, so there is no sampling error and no residual: the four orders account for
+100% of the variance. With no replication the highest-order term absorbs whatever
+is not captured below it.
 
-  Without replication the highest-order term absorbs everything not captured below it
-  and cannot be tested against an error estimate, and high-order terms are the least
-  likely to reproduce on a different sample of validation items.
-
-Method (same logic as analyze.py's eta^2, extended to all orders):
-  for each subset S of the four genes, take the mean of every cell defined by S,
-  then subtract the effects of all proper subsets of S so nothing is counted twice.
-  SS(S) is the sum of squares of what remains; the share is SS(S) / SS_total.
+For each subset S of the four genes, take the mean of every cell defined by S and
+subtract the effects of all proper subsets of S, so nothing is counted twice.
+SS(S) is the sum of squares of the remainder; its share is SS(S) / SS_total.
 
 Outputs to results/analysis/:
   variance_decomposition.csv   one row per objective x interaction order
-  variance_effects.csv         one row per individual effect (15 per objective)
+  variance_effects.csv         one row per effect (15 per objective)
 
 Run:  python variance_decomposition.py
 """

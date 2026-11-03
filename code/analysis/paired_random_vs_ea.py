@@ -1,42 +1,27 @@
 """
-Paired uncertainty quantification: guided (EA) vs unguided (random) search
-=========================================================================
-Quantifies the uncertainty on the random-vs-EA comparison and tests it for
-equivalence. Everything here is offline (CPU only, no GPU, no new model calls)
-because the complete 4096-genome oracle already fixes the score of every genome
-either search could return.
+Paired comparison of guided (EA) and unguided (random) search
+=============================================================
+Offline: the complete 4096-genome oracle already fixes the score of every genome
+either search could return, so no model calls are needed.
 
-THE RANDOM ARM IS THE EXACT ORDER-STATISTIC EXPECTATION, NOT A SIMULATION.
-Random search's expected best-of-K is computed in closed form to avoid Monte-Carlo
-noise, matching the definition used elsewhere in the analysis. Each evolutionary
-run is paired with the expected best-of-K at ITS OWN budget:
+The random arm is the exact order-statistic expectation, not a simulation. Each
+evolutionary run is paired with the expected best-of-K at its own budget:
 
     d_s = EA_s - E[best-of-K_s]
 
-where K_s is the number of DISTINCT genomes seed s actually scored (244-308) and
-E[.] is exact. Pairing is on budget, which is the matching that matters. Because
-the reference carries no sampling error, the only uncertainty in d_s is the
-evolutionary run's own variability, which is the quantity the test should be about.
+where K_s is the number of distinct genomes seed s scored (223-308). A fully
+simulated arm (draw K_s genomes once per seed, take the max) is reported as a
+robustness check; it adds the random arm's own sampling noise.
 
-A fully simulated arm (draw K_s genomes once per seed, take the max) is also
-computed and reported as a robustness check. It is strictly more conservative,
-since it adds the random arm's sampling noise on top, and it reaches the same
-verdict.
+Tests: paired t-test on d_s, TOST at margin delta, Wilcoxon signed-rank, and the
+minimum detectable effect at 80% power.
 
-TESTS
-  1. Paired t-test on d_s     -> is there a difference?
-  2. TOST at margin delta     -> is any difference small enough to call the two
-                                 equivalent?
-  3. Wilcoxon signed-rank     -> nonparametric backup, because the scores are
-                                 multiples of 1/250 and therefore lumpy
-  4. Power / MDE              -> could this design have found a difference?
-
-Reads : results/brute_force/brute_force_combined.csv   (the 4096-genome oracle)
+Reads : results/brute_force/brute_force_combined.csv
         results/evolution/llama/{exact,ordinal}/evolution_convergence_seed*.csv
 Writes: results/analysis/paired_ea_vs_random.csv       (per-seed pairs)
         results/analysis/paired_ea_vs_random_tests.csv (test statistics)
-        results/analysis/outcome_distribution.csv      (how often each arm lands
-                                                        within a band of the optimum)
+        results/analysis/outcome_distribution.csv      (outcomes within a band of
+                                                        the optimum)
 
 Run:
     python paired_random_vs_ea.py
@@ -68,8 +53,8 @@ MODES = {
 }
 ACTIVE_MODES = ("exact", "ordinal")
 
-# Bands below the optimum used for the outcome distribution. Scores are multiples
-# of 1/250, so TOL only guards float comparison, not a real tolerance.
+# Bands below the optimum used for the outcome distribution. TOL guards float
+# comparison only; scores are multiples of 1/250.
 BANDS = (0.0, 0.005, 0.010, 0.020)
 TOL = 1e-12
 
@@ -108,8 +93,7 @@ def expected_best_of_k(sorted_desc, k, _cache={}):
     """EXACT E[best-of-k] under sampling without replacement, from the complete
     oracle. With scores ranked descending, the i-th ranked score is the maximum
     of the draw with probability [C(N-i+1,k) - C(N-i,k)] / C(N,k). Evaluated in
-    log space for numerical stability. This is the same closed form used for the
-    search-vs-random curve elsewhere in the analysis."""
+    log space for numerical stability."""
     key = (id(sorted_desc), k)
     if key in _cache:
         return _cache[key]
@@ -154,10 +138,9 @@ def p_best_of_k_at_least(scores, threshold, k):
 
 
 def outcome_distribution(mode, scores, runs, ea_scores):
-    """How often each arm lands within a band of the optimum. The mean of the two
-    arms can agree while their spread does not, so the paired test is reported
-    alongside this. The random arm is the exact probability at each run's own
-    budget, averaged over runs, so both arms are summarised over the same budgets."""
+    """How often each arm lands within a band of the optimum. The random arm is the
+    exact probability at each run's own budget, averaged over runs, so both arms are
+    summarised over the same budgets."""
     best = max(scores)
     rows = []
     for eps in BANDS:

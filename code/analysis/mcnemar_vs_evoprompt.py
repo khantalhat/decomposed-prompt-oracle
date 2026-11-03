@@ -1,21 +1,18 @@
 """
 Paired comparison of two prompts on the same test items (McNemar's test)
 =======================================================================
-Two systems scored on the identical test set are not independent samples: the
-same items are easy or hard for both. McNemar's test conditions on the items
-where they disagree, which is the only place information about a difference
-lives, and so is the correct test here. A two-proportion test would treat the
-arms as independent and give the wrong standard error.
-
-Reads two per-item files written by evaluate_full_test.py, aligns them on the
-review text, and tests the discordant pairs:
+Two systems scored on identical items are not independent samples, so the test
+conditions on the items where they disagree:
 
     b = A correct, B wrong
     c = A wrong,  B correct
 
-Under the null the two are equally likely, so b ~ Binomial(b + c, 1/2). The
-exact binomial version is reported; it needs no large-sample approximation and
-is valid when b + c is small.
+Under the null these are equally likely, so b ~ Binomial(b + c, 1/2); the exact
+binomial version is reported. Equivalence is tested at the same margin used for
+the search comparison.
+
+Reads two per-item files written by evaluate_full_test.py and aligns them on the
+review text.
 
 Run:  python mcnemar_vs_evoprompt.py <file_A.csv> <file_B.csv>
 """
@@ -87,9 +84,8 @@ def main():
     print(f"  -> {'a difference this large is unlikely under the null' if p < 0.05 else 'no significant difference'} at alpha = 0.05")
 
     if nd:
-        # A non-significant McNemar is absence of evidence, not evidence of parity.
-        # The same objection the paper raises against "search does not beat random"
-        # applies here, so equivalence is tested directly, on the same delta = 0.01.
+        # A non-significant difference is not evidence of parity, so equivalence
+        # is tested directly.
         import math
         se = math.sqrt(nd) / n          # SE of (b - c)/n
         diff = (b - c) / n

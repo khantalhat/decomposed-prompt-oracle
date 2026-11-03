@@ -216,12 +216,9 @@ def build_alpaca_fewshot(full_prompt, text, demos=FEWSHOT_EXAMPLES):
 # ---------------------------------------------------------------------------
 # PUBLISHED BASELINE PROMPTS
 # ---------------------------------------------------------------------------
-# Verbatim prompts from prior work, evaluated through this identical pipeline so
-# the comparison is on one measurement scale. These are NOT our prompts and are
-# never searched over; they exist only to reproduce a published number.
-#
-# EvoPrompt's SST-5 prompt grades on terrible/bad/okay/good/great rather than our
-# very negative..very positive, so it needs a vocabulary mapping before scoring.
+# Prompts from prior work, run through this pipeline so the comparison is on one
+# measurement scale. EvoPrompt's SST-5 prompt grades on terrible/bad/okay/good/great,
+# so it needs a vocabulary mapping before scoring.
 BASELINE_PROMPTS = {
     "evoprompt_ga": {
         "text": ("Have your friend evaluate the movie they had just seen and provide a summary "
@@ -232,9 +229,9 @@ BASELINE_PROMPTS = {
     },
 }
 
-# Alternate output vocabularies, mapped onto our five canonical classes. Ordered
-# most specific first, matching extract_label's precedence: a two-word label must
-# be tested before its one-word suffix, and OKAY before OK.
+# Alternate output vocabularies, mapped onto the five canonical classes. Ordered
+# most specific first: a two-word label must be tested before its one-word suffix,
+# and OKAY before OK.
 ALT_LABEL_PATTERNS = {
     "evoprompt": [
         ("VERY NEGATIVE", 0), ("VERY POSITIVE", 4),
@@ -246,9 +243,8 @@ ALT_LABEL_PATTERNS = {
 
 
 def extract_label_alt(output_text, patterns):
-    """extract_label with an alternate vocabulary. Same three-pass precedence
-    (exact match, then prefix, then substring) so the only thing that differs
-    from our own runs is which words count as a label."""
+    """extract_label with an alternate vocabulary: same three-pass precedence
+    (exact match, then prefix, then substring)."""
     answer = " ".join(output_text.strip().upper().split())
     if not answer:
         return -1
@@ -272,9 +268,8 @@ def build_inputs(genome, texts, prompt_format, fewshot=False, subs=(), demos=FEW
         if fewshot:
             return [build_chat_fewshot(genome, t, demos, subs) for t in texts]
         return [build_chat(genome, t, subs) for t in texts]
-    # prompt_text bypasses the genome, so an externally authored prompt (e.g. a
-    # published baseline's) runs through this identical pipeline: same demo set,
-    # same template, same decoding and label extraction.
+    # prompt_text replaces the genome's resolved text, leaving the demo set,
+    # template, decoding and label extraction unchanged.
     full_prompt = prompt_text if prompt_text is not None else resolve_prompt_text(genome, subs)
     if fewshot:
         return [build_alpaca_fewshot(full_prompt, t, demos) for t in texts]
@@ -554,8 +549,7 @@ def main():
         w.writerow(["tag", "dataset", "model", "prompt_format", "shots", "genome", "prompt",
                     "n_samples", "exact_accuracy", "ordinal_score",
                     "n_correct", "n_unrecognized"])
-        # A baseline run has no genome; naming it here keeps the row from claiming a
-        # score for a real genome that was never evaluated.
+        # A baseline run has no genome.
         genome_field = f"baseline:{args.baseline}" if args.baseline else list(genome)
         w.writerow([args.tag, args.dataset, args.model, args.prompt_format, shots, genome_field, full_prompt,
                     n, round(exact_acc, 6), round(ordinal, 6), n_correct, n_unrec])

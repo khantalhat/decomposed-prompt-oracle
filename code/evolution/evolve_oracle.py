@@ -4,13 +4,10 @@ Single-objective evolutionary search with oracle-lookup fitness (CPU, no GPU)
 Runs the same (mu+lambda) EA as evolve_prompt_llama.py, but scores each genome
 by reading the completed 4,096-genome oracle instead of calling the model.
 
-Why this is the same search. The EA's fitness is "what does this genome score on
-the balanced validation set". The oracle already holds exactly that number for
-every genome in the space, computed once under the pinned float32 setting. Reading
-it is therefore not an approximation of the fitness, it IS the fitness, and it
-removes the run-to-run wobble that greedy inference introduces when the same genome
-is re-scored. It also matches the random-search control, which is likewise computed
-from the oracle rather than simulated.
+The fitness is the genome's score on the balanced validation set, which the oracle
+already holds for every genome, computed once under the pinned float32 setting.
+Reading it avoids re-scoring the same genome under greedy inference, and matches
+the random-search control, which is also computed from the oracle.
 
 The operators are DEAP's, identical to the GPU script: random genome initialisation,
 single-gene mutation, (mu+lambda) selection with selBest, mu=20, lambda=20,
